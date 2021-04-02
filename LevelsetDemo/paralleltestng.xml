@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="LevelsetSuite" parallel="tests" thread-count="2" verbose="10">
+    <test name="onChrome ">
+        <parameter name="browserName" value="Chrome"/>
+        <classes>
+            <class name="levelset.tests.SelectDocumentPageTest"></class>
+        </classes>
+    </test>
+    <test name="onFirefox ">
+        <parameter name="browserName" value="Firefox"/>
+        <classes>
+            <class name="levelset.tests.SelectDocumentPageTest"></class>
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,177 @@
+[INFO  - 2021-04-02T15:26:38.495Z] GhostDriver - Main - running on port 36635
+[INFO  - 2021-04-02T15:26:40.010Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2021-04-02T15:26:40.011Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.customHeaders:  - {}
+[INFO  - 2021-04-02T15:26:40.012Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2021-04-02T15:26:40.012Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: d23ed440-93c7-11eb-bce8-5bf25b319814
+[ERROR - 2021-04-02T15:26:44.293Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - msg: TypeError: undefined is not an object (evaluating 'a.fn')
+[ERROR - 2021-04-02T15:26:44.294Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/themes/levelset/dist/js/lib/owl.carousel.min.js?ver=2.68.0:6)
+[ERROR - 2021-04-02T15:26:44.295Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'a(window)')
+[ERROR - 2021-04-02T15:26:44.296Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/themes/levelset/dist/js/lib/magnific-popup.min.js?ver=2.68.0:4)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/themes/levelset/dist/js/lib/magnific-popup.min.js?ver=2.68.0:4)
+[ERROR - 2021-04-02T15:26:44.299Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll(".LevelsetCountdown").forEach')
+[ERROR - 2021-04-02T15:26:44.299Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  r (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:26:44.398Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'c.forEach(function(a){a.addEventListener("mousedown",b)})')
+[ERROR - 2021-04-02T15:26:44.398Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - stack:
+  (anonymous function) (https://www.levelset.com/:1)
+[ERROR - 2021-04-02T15:26:44.412Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - msg: ReferenceError: Can't find variable: lsUET
+[ERROR - 2021-04-02T15:26:44.412Z] Session [d23ed440-93c7-11eb-bce8-5bf25b319814] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_9abe168fa0a59f98d3e3a687fcf320d2.js?ver=2.68.0:1)
+[INFO  - 2021-04-02T15:32:25.218Z] GhostDriver - Main - running on port 12270
+[INFO  - 2021-04-02T15:32:26.396Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2021-04-02T15:32:26.396Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.customHeaders:  - {}
+[INFO  - 2021-04-02T15:32:26.396Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-10-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2021-04-02T15:32:26.397Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: a0b4fc50-93c8-11eb-b9a0-a9624497daf9
+[ERROR - 2021-04-02T15:32:31.217Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'c.forEach(function(a){a.addEventListener("mousedown",b)})')
+[ERROR - 2021-04-02T15:32:31.218Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://www.levelset.com/:1)
+[ERROR - 2021-04-02T15:32:31.380Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: ReferenceError: Can't find variable: Promise
+[ERROR - 2021-04-02T15:32:31.380Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  j (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  j (:0)
+  value (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_9abe168fa0a59f98d3e3a687fcf320d2.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:32:31.595Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll(".LevelsetCountdown").forEach')
+[ERROR - 2021-04-02T15:32:31.595Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  r (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:32:42.638Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll('input[type\x3dhidden][name\x3d"'+b+'"]').forEach(function(a){a.value=levelsetUTM__getCookie(b)})')
+[ERROR - 2021-04-02T15:32:42.638Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  levelsetUTM__fillHiddenHubspotField (https://www.levelset.com/:4)
+  forEach (:0)
+  (anonymous function) (https://www.levelset.com/:5)
+[ERROR - 2021-04-02T15:32:42.807Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377562759
+[ERROR - 2021-04-02T15:32:45.575Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377565566
+[ERROR - 2021-04-02T15:32:48.468Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377568420
+[ERROR - 2021-04-02T15:32:50.920Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377570878
+[ERROR - 2021-04-02T15:32:53.356Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377573342
+[ERROR - 2021-04-02T15:32:55.836Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377575770
+[ERROR - 2021-04-02T15:32:58.282Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377578279
+[ERROR - 2021-04-02T15:33:00.733Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377580675
+[ERROR - 2021-04-02T15:33:03.282Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377583228
+[ERROR - 2021-04-02T15:33:05.729Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377585677
+[ERROR - 2021-04-02T15:33:08.209Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377588158
+[ERROR - 2021-04-02T15:33:10.748Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377590707
+[ERROR - 2021-04-02T15:33:13.288Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377593237
+[ERROR - 2021-04-02T15:33:15.843Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377595784
+[ERROR - 2021-04-02T15:33:18.356Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377598300
+[ERROR - 2021-04-02T15:33:20.873Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377600833
+[ERROR - 2021-04-02T15:33:23.344Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377603340
+[ERROR - 2021-04-02T15:33:26.327Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377606275
+[ERROR - 2021-04-02T15:33:28.745Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377608740
+[ERROR - 2021-04-02T15:33:31.213Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377611178
+[ERROR - 2021-04-02T15:33:33.994Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377613946
+[ERROR - 2021-04-02T15:33:36.456Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377616403
+[ERROR - 2021-04-02T15:33:38.875Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377618868
+[ERROR - 2021-04-02T15:33:41.604Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377621591
+[ERROR - 2021-04-02T15:33:46.777Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'c.forEach(function(a){a.addEventListener("mousedown",b)})')
+[ERROR - 2021-04-02T15:33:46.778Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://www.levelset.com/:1)
+[ERROR - 2021-04-02T15:33:46.845Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll(".LevelsetCountdown").forEach')
+[ERROR - 2021-04-02T15:33:46.845Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  r (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:33:48.134Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377628089
+[ERROR - 2021-04-02T15:33:49.763Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll('input[type\x3dhidden][name\x3d"'+b+'"]').forEach(function(a){a.value=levelsetUTM__getCookie(b)})')
+[ERROR - 2021-04-02T15:33:49.763Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  levelsetUTM__fillHiddenHubspotField (https://www.levelset.com/:4)
+  forEach (:0)
+  (anonymous function) (https://www.levelset.com/:5)
+[ERROR - 2021-04-02T15:33:50.509Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377630508
+[ERROR - 2021-04-02T15:33:53.019Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377633017
+[ERROR - 2021-04-02T15:33:55.986Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377635931
+[ERROR - 2021-04-02T15:33:58.448Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377638388
+[ERROR - 2021-04-02T15:34:00.996Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377640941
+[ERROR - 2021-04-02T15:34:03.441Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377643397
+[ERROR - 2021-04-02T15:34:06.160Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377646157
+[ERROR - 2021-04-02T15:34:08.692Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377648684
+[ERROR - 2021-04-02T15:34:11.207Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377651205
+[ERROR - 2021-04-02T15:34:13.653Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377653604
+[ERROR - 2021-04-02T15:34:16.078Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377656073
+[ERROR - 2021-04-02T15:34:18.488Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377658485
+[ERROR - 2021-04-02T15:34:20.936Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377660880
+[ERROR - 2021-04-02T15:34:23.501Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377663481
+[ERROR - 2021-04-02T15:34:26.299Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377666255
+[ERROR - 2021-04-02T15:34:28.844Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377668785
+[ERROR - 2021-04-02T15:34:31.348Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377671306
+[ERROR - 2021-04-02T15:34:33.834Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377673795
+[ERROR - 2021-04-02T15:34:36.512Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377676458
+[ERROR - 2021-04-02T15:34:39.327Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377679277
+[ERROR - 2021-04-02T15:34:42.075Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377682030
+[ERROR - 2021-04-02T15:34:44.635Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377684602
+[ERROR - 2021-04-02T15:34:47.152Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377687101
+[ERROR - 2021-04-02T15:34:53.767Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'c.forEach(function(a){a.addEventListener("mousedown",b)})')
+[ERROR - 2021-04-02T15:34:53.767Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://www.levelset.com/:1)
+[ERROR - 2021-04-02T15:34:53.920Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll(".LevelsetCountdown").forEach')
+[ERROR - 2021-04-02T15:34:53.921Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  r (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:34:54.085Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'new Promise')
+[ERROR - 2021-04-02T15:34:54.085Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  j (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  j (:0)
+  value (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_9abe168fa0a59f98d3e3a687fcf320d2.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:34:55.040Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377694991
+[ERROR - 2021-04-02T15:34:57.078Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll('input[type\x3dhidden][name\x3d"'+b+'"]').forEach(function(a){a.value=levelsetUTM__getCookie(b)})')
+[ERROR - 2021-04-02T15:34:57.079Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  levelsetUTM__fillHiddenHubspotField (https://www.levelset.com/:4)
+  forEach (:0)
+  (anonymous function) (https://www.levelset.com/:5)
+[ERROR - 2021-04-02T15:34:57.905Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377697844
+[ERROR - 2021-04-02T15:35:00.381Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377700339
+[ERROR - 2021-04-02T15:35:02.918Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377702878
+[ERROR - 2021-04-02T15:35:05.451Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377705400
+[ERROR - 2021-04-02T15:35:07.967Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377707917
+[ERROR - 2021-04-02T15:35:10.476Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377710428
+[ERROR - 2021-04-02T15:35:13.091Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377713042
+[ERROR - 2021-04-02T15:35:16.552Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377716494
+[ERROR - 2021-04-02T15:35:19.170Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377719115
+[ERROR - 2021-04-02T15:35:21.950Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377721897
+[ERROR - 2021-04-02T15:35:24.498Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377724494
+[ERROR - 2021-04-02T15:35:26.908Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377726885
+[ERROR - 2021-04-02T15:35:29.370Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377729310
+[ERROR - 2021-04-02T15:35:31.770Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377731768
+[ERROR - 2021-04-02T15:35:34.193Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377734148
+[ERROR - 2021-04-02T15:35:36.593Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377736588
+[ERROR - 2021-04-02T15:35:39.035Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377739000
+[ERROR - 2021-04-02T15:35:41.468Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377741462
+[ERROR - 2021-04-02T15:35:44.399Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377744329
+[ERROR - 2021-04-02T15:35:46.912Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377746854
+[ERROR - 2021-04-02T15:35:49.348Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377749344
+[ERROR - 2021-04-02T15:35:52.084Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377752081
+[ERROR - 2021-04-02T15:35:54.518Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377754469
+[ERROR - 2021-04-02T15:35:59.770Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'c.forEach(function(a){a.addEventListener("mousedown",b)})')
+[ERROR - 2021-04-02T15:35:59.770Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://www.levelset.com/:1)
+[ERROR - 2021-04-02T15:35:59.773Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll(".LevelsetCountdown").forEach')
+[ERROR - 2021-04-02T15:35:59.773Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  r (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_537a4bc768a40c2ec98811cd528a03c7.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:35:59.904Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: ReferenceError: Can't find variable: Promise
+[ERROR - 2021-04-02T15:35:59.904Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  j (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  j (:0)
+  value (https://uet-client.levelset.com/prod/bundle.js?ver=1.1:1)
+  (anonymous function) (https://26n9kh1905s2j9i8k1dddift-wpengine.netdna-ssl.com/wp-content/cache/autoptimize/js/autoptimize_single_9abe168fa0a59f98d3e3a687fcf320d2.js?ver=2.68.0:1)
+[ERROR - 2021-04-02T15:36:01.165Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377761141
+[ERROR - 2021-04-02T15:36:02.851Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - msg: TypeError: undefined is not a constructor (evaluating 'document.querySelectorAll('input[type\x3dhidden][name\x3d"'+b+'"]').forEach(function(a){a.value=levelsetUTM__getCookie(b)})')
+[ERROR - 2021-04-02T15:36:02.851Z] Session [a0b4fc50-93c8-11eb-b9a0-a9624497daf9] - page.onError - stack:
+  levelsetUTM__fillHiddenHubspotField (https://www.levelset.com/:4)
+  forEach (:0)
+  (anonymous function) (https://www.levelset.com/:5)
+[ERROR - 2021-04-02T15:36:03.670Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377763623
+[ERROR - 2021-04-02T15:36:06.202Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377766139
+[ERROR - 2021-04-02T15:36:08.715Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377768663
+[ERROR - 2021-04-02T15:36:11.328Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377771325
+[ERROR - 2021-04-02T15:36:14.016Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377774014
+[ERROR - 2021-04-02T15:36:16.901Z] WebElementLocator - _handleLocateCommand - Element(s) NOT Found: GAVE UP. Search Stop Time: 1617377776856
