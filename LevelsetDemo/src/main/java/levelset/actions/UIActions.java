@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -18,13 +19,15 @@ import java.awt.event.KeyEvent;
 
 public class UIActions {
 
-    public WebDriver driver;
-    public Select select ;
-    public JavascriptExecutor jse ;
+    private WebDriver driver;
+    private Select select ;
+    private JavascriptExecutor jse ;
+    public Actions action ;
 
     public UIActions(WebDriver driver) {
         this.driver = driver;
         jse = (JavascriptExecutor) driver;
+        action = new Actions(driver);
     }
 
 
@@ -106,18 +109,24 @@ public class UIActions {
         robot.keyRelease(KeyEvent.VK_ENTER);
     }
 
-    //Method to scrollDown
+    @Step("ScrollDown")
     public void scrollToBottom()
 
     {
         jse.executeScript("scrollBy(0,2500)");
     }
 
-    //Method to scroll until view element
-    public void scrollUntilViewElement(WebElement myElement) {
-        jse.executeScript("arguments[0].scrollIntoView();", myElement);
-
+    @Step("ScrollDown until view element")
+    public void scrollUntilViewElement(By myElement) {
+        jse.executeScript("arguments[0].scrollIntoView();", driver.findElement(myElement));
     }
+
+    @Step("Hover to element")
+    public void hoverElement(By element){
+        action.moveToElement(driver.findElement(element)).perform();
+    }
+
+
 
 
 

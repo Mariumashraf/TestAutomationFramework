@@ -1,5 +1,6 @@
 package levelset.tests;
 
+import com.google.common.collect.ImmutableMap;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
@@ -18,6 +19,11 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
+
 public class SelectDocumentPageTest {
     WebDriver driver;
     BasePage basePage;
@@ -25,6 +31,16 @@ public class SelectDocumentPageTest {
     SelectDocumentPage selectDocumentPage;
     BrowserActions browserActions;
     Helper newHelper;
+
+    @BeforeSuite
+    void setAllureEnvironment() {
+        allureEnvironmentWriter(
+                ImmutableMap.<String, String>builder()
+                        .put("Tester", "Marium Ashraf")
+                        .put("WebSite", "Levelset")
+                        .put("URL", "https://www.levelset.com/")
+                        .build());
+    }
 
     @BeforeClass
     @Parameters("browserName")
@@ -65,10 +81,11 @@ public class SelectDocumentPageTest {
 
     @AfterMethod
     @Step("Take Image")
-    public void takePhoto(ITestResult result){
-        newHelper.captureScreenshot(driver,result.getName());
-    }
+    public void takePhoto(ITestResult result) throws MalformedURLException {
 
+        newHelper.captureScreenshot(driver,result.getName());
+        newHelper.getVideo(new URL("http://localhost:8080/download_video/%s.mp4"));
+    }
   /*  @AfterMethod
     public void takeScreenShot(ITestResult result){
         if (result.getStatus() == ITestResult.FAILURE)

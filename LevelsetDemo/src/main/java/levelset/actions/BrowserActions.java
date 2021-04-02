@@ -13,7 +13,7 @@ import org.testng.annotations.Optional;
 
 public class BrowserActions {
 
-    public WebDriver driver;
+    private WebDriver driver;
 
     public BrowserActions(WebDriver driver) {
         this.driver = driver;
