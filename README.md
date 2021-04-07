@@ -1,2 +1,2 @@
-# TestAutomationFramework
-Test Automation Framework
+# WebTestAutomationFramework
+Web Test Automation Framework
