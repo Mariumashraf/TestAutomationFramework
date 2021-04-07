@@ -1,5 +1,7 @@
 package levelset.tests;
 
+import atu.testrecorder.ATUTestRecorder;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 import com.google.common.collect.ImmutableMap;
 import io.qameta.allure.Attachment;
 import io.qameta.allure.Description;
@@ -31,6 +33,7 @@ public class SelectDocumentPageTest {
     SelectDocumentPage selectDocumentPage;
     BrowserActions browserActions;
     Helper newHelper;
+    ATUTestRecorder atuTestRecorder;
 
     @BeforeSuite
     void setAllureEnvironment() {
@@ -57,7 +60,9 @@ public class SelectDocumentPageTest {
     }
 
     @BeforeMethod
-    public void openHomePage() {
+    public void openHomePage() throws ATUTestRecorderException {
+        atuTestRecorder = new ATUTestRecorder("C:\\Users\\lenovo\\Downloads\\LevelsetDemo\\videos","Test",false);
+        atuTestRecorder.start();
         basePage.navigateToHomePage();
     }
 
@@ -81,10 +86,13 @@ public class SelectDocumentPageTest {
 
     @AfterMethod
     @Step("Take Image")
-    public void takePhoto(ITestResult result) throws MalformedURLException {
+    public void takePhoto(ITestResult result) throws MalformedURLException, ATUTestRecorderException {
 
         newHelper.captureScreenshot(driver,result.getName());
-        newHelper.getVideo(new URL("http://localhost:8080/download_video/%s.mp4"));
+        if (result.getStatus() == ITestResult.FAILURE) {
+            atuTestRecorder.stop();
+        }
+       // newHelper.getVideo(new URL("http://localhost:8080/download_video/%s.mp4"));
     }
   /*  @AfterMethod
     public void takeScreenShot(ITestResult result){
