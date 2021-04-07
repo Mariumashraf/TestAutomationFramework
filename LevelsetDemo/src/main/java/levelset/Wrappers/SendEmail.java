@@ -40,7 +40,7 @@ public class SendEmail {
 
             protected PasswordAuthentication getPasswordAuthentication() {
 
-                return new PasswordAuthentication("mariamashraf910@gmail.com", "prayforme1995#");
+              //  return new PasswordAuthentication("mariamashraf910@gmail.com", "*******");
 
             }
 
