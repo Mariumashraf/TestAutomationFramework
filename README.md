@@ -1,7 +1,7 @@
 # WebTestAutomationFramework
 # Web Test Automation Framework to perform GUI and API Tests With a Data Driven Framework and Page Object Model design pattern.
 
-#The used tools:
+# The used tools:
 1. Selenium WebDriver
 2. RestAssured
 3.TestNG 
