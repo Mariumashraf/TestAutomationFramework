@@ -10,7 +10,7 @@
 6. Allure Reporting<br/>
 
 Framework's features:<br/>
-•	Reading data from Properties, Excel and Json files.<br/><br/
+•	Reading data from Properties, Excel and Json files.<br/><br/>
 •	Running on multiple browsers.<br/><br/>
 • Headless running.<br/><br/>
 •	It includes taking screenshots, recording videos, sending email and logger.<br/><br/>
