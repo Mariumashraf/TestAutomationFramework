@@ -4,10 +4,10 @@
 # The used tools:<br/>
 1. Selenium WebDriver<br/>
 2. RestAssured<br/>
-3.TestNG <br/>
-4.Maven<br/>
-5.Java <br/>
-6.Allure Reporting<br/>
+3. TestNG <br/>
+4. Maven<br/>
+5. Java <br/>
+6. Allure Reporting<br/>
 
 Framework's features:<br/>
 •	Reading data from Properties, Excel and Json files.<br/>
