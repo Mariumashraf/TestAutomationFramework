@@ -1,18 +1,18 @@
 # WebTestAutomationFramework
 # Web Test Automation Framework to perform GUI and API Tests With a Data Driven Framework and Page Object Model design pattern.
 
-# The used tools:
-1. Selenium WebDriver
-2. RestAssured
-3.TestNG 
-4.Maven
-5.Java 
-6.Allure Reporting
+# The used tools:<br/>
+1. Selenium WebDriver<br/>
+2. RestAssured<br/>
+3.TestNG <br/>
+4.Maven<br/>
+5.Java <br/>
+6.Allure Reporting<br/>
 
-Framework's features:
-•	Reading data from Properties, Excel and Json files.
-•	Running on multiple browsers besides headless running.
-•	It includes taking screenshots, recording videos, sending email and logger.
-•	Generating Allure report.
+Framework's features:<br/>
+•	Reading data from Properties, Excel and Json files.<br/>
+•	Running on multiple browsers besides headless running.<br/>
+•	It includes taking screenshots, recording videos, sending email and logger.<br/>
+•	Generating Allure report.<br/>
 
 
