@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [SeleniumGridDocker]" parallel="tests">
+  <test thread-count="2" verbose="0" name="Chrome Test(failed)" parallel="tests">
+    <parameter name="Port" value="9001"/>
+    <parameter name="browserName" value="Chrome"/>
+    <classes>
+      <class name="levelset.tests.SelectDocumentPageTest">
+        <methods>
+          <include name="validateLable" invocation-numbers="0 1"/>
+          <include name="openHomePage"/>
+          <include name="setup"/>
+          <include name="takePhoto"/>
+          <include name="tearDown"/>
+          <include name="setAllureEnvironment"/>
+        </methods>
+      </class> <!-- levelset.tests.SelectDocumentPageTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+</suite> <!-- Failed suite [SeleniumGridDocker] -->

@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 60.116 s <<< FAILURE! - in TestSuite
+validateLable(levelset.tests.SelectDocumentPageTest)  Time elapsed: 7.488 s  <<< FAILURE!
+java.lang.AssertionError: expected [20-Day Preliminary Notice] but found [null]
+	at levelset.tests.SelectDocumentPageTest.validateLable(SelectDocumentPageTest.java:89)
+
+validateLable(levelset.tests.SelectDocumentPageTest)  Time elapsed: 2.728 s  <<< FAILURE!
+org.openqa.selenium.StaleElementReferenceException: 
+stale element reference: element is not attached to the page document
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-7SSCP5Q', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /tmp/.com.google.Chrome.gYZFqH}, goog:chromeOptions: {debuggerAddress: localhost:41221}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: 4fa0664729af146dfcc69c0d03a...}
+Session ID: 4fa0664729af146dfcc69c0d03ab5275
+	at levelset.tests.SelectDocumentPageTest.validateLable(SelectDocumentPageTest.java:87)
+
