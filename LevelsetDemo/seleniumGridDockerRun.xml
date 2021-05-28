@@ -5,7 +5,7 @@
         <parameter name="browserName" value="ChromeDocker" />
         <parameter name="Port" value="9001" />
         <classes>
-            <class name="levelset.tests.SelectDocumentPageTest" />
+            <class name="levelset.gui.tests.SelectDocumentPageTest" />
         </classes>
     </test>
 
@@ -13,7 +13,7 @@
         <parameter name="browserName" value="FirefoxDocker" />
         <parameter name="Port" value="9002" />
         <classes>
-            <class name="levelset.tests.SelectDocumentPageTest" />
+            <class name="levelset.gui.tests.SelectDocumentPageTest" />
         </classes>
     </test>
 

@@ -1,40 +1,42 @@
 package levelset.gui.actions;
 
+import levelset.gui.Wrappers.Log;
 import org.openqa.selenium.WebDriver;
+import java.util.ArrayList;
+import static levelset.gui.actions.BrowserActions.driver;
+
+/*
+Control Window Manager
+Back, Forward, Refresh
+Switch to new tab
+ */
 
 public class WindowManager {
-    private WebDriver driver;
+
     private WebDriver.Navigation navigate;
 
-    public WindowManager(WebDriver driver){
-        this.driver = driver;
+    public WindowManager(){
         navigate = driver.navigate();
     }
 
     public void goBack(){
+        Log.info("Go Back");
         navigate.back();
     }
 
     public void goForward(){
+        Log.info("Forward");
         navigate.forward();
     }
 
     public void refreshPage(){
+        Log.info("Refresh Page");
         navigate.refresh();
     }
 
-   /* public void switchToTab(String tabTitle){
-        var windows = driver.getWindowHandles();
-        for(String window : windows){
-            driver.switchTo().window(window);
-            if(tabTitle.equals(driver.getTitle())){
-                break;
-            }
-        }
-    }*/
+    public void switchToNewTab(int tabIndex){
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(tabIndex));
 
-    /*public void switchToNewTab(){
-        var windows = driver.getWindowHandles();
-        windows.forEach(driver.switchTo()::window);
-    }*/
+    }
 }

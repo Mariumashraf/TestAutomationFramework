@@ -1,9 +1,9 @@
 package levelset.gui.actions;
 
 import io.qameta.allure.Step;
+import levelset.gui.Wrappers.Log;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -16,16 +16,16 @@ import java.awt.*;
 import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import static levelset.gui.actions.BrowserActions.driver;
 
 public class UIActions {
 
-    private WebDriver driver;
+
     private Select select ;
     private JavascriptExecutor jse ;
     public Actions action ;
 
-    public UIActions(WebDriver driver) {
-        this.driver = driver;
+    public UIActions() {
         jse = (JavascriptExecutor) driver;
         action = new Actions(driver);
     }
@@ -33,12 +33,14 @@ public class UIActions {
 
     @Step("Navigate to URL")
     public void navigateToURL(String URL, By element) {
+        Log.info("Navigate to URL");
         driver.get(URL);
         Assert.assertTrue(validateElement(ExpectedConditions.presenceOfElementLocated(element)));
     }
 
     @Step("Click on Element")
     public void clickOn(By element, By expectedElement) {
+        Log.info("Click On Element");
         Assert.assertTrue(validateElement(ExpectedConditions.visibilityOfElementLocated(element)));
         driver.findElement(element).click();
         //unique element
@@ -57,13 +59,10 @@ public class UIActions {
             return driver.findElement(element).getText();
 
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.error("Can't get text from the element");
             return null;
-            //screen shot
-            //error from log
-            //alternative solution
-            //ملهاش لزمة
         }
+
     }
 
     @Step("Clear Text")
@@ -137,6 +136,7 @@ public class UIActions {
             return true;
 
         } catch (Exception e) {
+            Log.error("Can't find Element");
             return false;
         }
     }

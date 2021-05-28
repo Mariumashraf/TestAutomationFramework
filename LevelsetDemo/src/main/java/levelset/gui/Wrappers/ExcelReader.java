@@ -15,7 +15,6 @@ public class ExcelReader {
     static FileInputStream fis = null;
 
     public FileInputStream getFileInputStream(String filePath, int totalNumberOfCols) {
-        //String filePath = System.getProperty("user.dir")+"/src/test/java/data/AddNewTripData.xlsx";
         File srcFile = new File(filePath);
 
         try {

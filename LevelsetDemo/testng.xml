@@ -5,7 +5,7 @@
     <test name="onChrome">
         <parameter name="browserName" value="Chrome"/>
         <classes>
-            <class name="levelset.tests.SelectDocumentPageTest"></class>
+            <class name="levelset.gui.tests.SelectDocumentPageTest"></class>
         </classes>
     </test>
 </suite>

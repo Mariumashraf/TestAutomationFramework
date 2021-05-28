@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j='http://jakarta.apache.org/log4j/'>
+    <!--The console appender is used to print the log statements on the console-->
+    <appender name="consoleAppender" class="org.apache.log4j.ConsoleAppender">
+        <!--the layouts are used to specify the rendering mechanism for log statements-->
+        <layout class="org.apache.log4j.PatternLayout">
+            <!-- For Printing message with date , time & class name also
+            <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %5p %c{1} - %m%n"/>
+            -->
+            <!-- For printing message only -->
+            <param name="ConversionPattern" value="%-5p[%c{1}]: %m%n"/>
+        </layout>
+    </appender>
+    <!--The file appender is used to print the log statements within an external file-->
+    <appender name="fileAppender" class="org.apache.log4j.RollingFileAppender">
+
+        <!-- creat new file not to overwrite-->
+        <param name="append" value="false"/>
+
+        <!--location of logger file-->
+        <param name="file" value="Logs/TestLogs.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{dd-MM-yyyy HH:mm:ss}%x %-5p[%c{1}]: %m%n"/>
+        </layout>
+    </appender>
+    <root>
+        <level value="INFO"/>
+        <appender-ref ref="consoleAppender"/>
+        <appender-ref ref="fileAppender"/>
+    </root>
+</log4j:configuration>

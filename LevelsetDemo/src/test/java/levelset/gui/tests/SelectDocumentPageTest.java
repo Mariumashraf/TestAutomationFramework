@@ -4,31 +4,38 @@ package levelset.gui.tests;
 import com.google.common.collect.ImmutableMap;
 import io.qameta.allure.Description;
 import io.qameta.allure.Step;
-import levelset.gui.Wrappers.Helper;
+import levelset.gui.Wrappers.Log;
+import levelset.gui.Wrappers.PropertiesReader;
+import levelset.gui.Wrappers.TakeScreenShot;
 import levelset.gui.actions.BrowserActions;
 import levelset.gui.pages.BasePage;
 import levelset.gui.pages.SelectDocumentPage;
 import levelset.gui.pages.HomePage;
 import levelset.gui.Wrappers.ExcelReader;
-import org.openqa.selenium.WebDriver;
+import org.apache.log4j.xml.DOMConfigurator;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
+
+import static levelset.gui.actions.BrowserActions.driver;
 
 import static com.github.automatedowl.tools.AllureEnvironmentWriter.allureEnvironmentWriter;
 
 
 public class SelectDocumentPageTest {
-    WebDriver driver;
+
     BasePage basePage;
     HomePage homePage;
     SelectDocumentPage selectDocumentPage;
     BrowserActions browserActions;
-    Helper newHelper;
+    TakeScreenShot takeScreenShot;
+
     @BeforeSuite
     void setAllureEnvironment() {
+        DOMConfigurator.configure("log4j.xml");
         allureEnvironmentWriter(
                 ImmutableMap.<String, String>builder()
                         .put("Tester", "Marium Ashraf")
@@ -36,22 +43,24 @@ public class SelectDocumentPageTest {
                         .put("URL", "https://www.levelset.com/")
                         .build());
     }
+
     @BeforeClass
     @Parameters("browserName")
     public void setup(String browserName) throws MalformedURLException {
-        browserActions = new BrowserActions(driver);
-        driver = browserActions.initializeWebDriver(browserName);
+        browserActions = new BrowserActions();
+        browserActions.initializeWebDriver(browserName);
         browserActions.maximizeBrowser();
 
-        homePage = new HomePage(driver);
-        basePage = new BasePage(driver);
-        selectDocumentPage = new SelectDocumentPage(driver);
-        newHelper = new Helper(driver);
+        homePage = new HomePage();
+        basePage = new BasePage();
+        selectDocumentPage = new SelectDocumentPage();
+        takeScreenShot = new TakeScreenShot();
 
     }
 
     @BeforeMethod
-    public void openHomePage(){
+    public void openHomePage() {
+
         basePage.navigateToHomePage();
     }
 
@@ -59,23 +68,28 @@ public class SelectDocumentPageTest {
     @Test(dataProvider = "nameOfDocuments", priority = 1, description = "Check Price")
     @Description("Check Price of each document")
     public void validatePrices(String documentName) {
+        Log.startTestCase("First test case");
         homePage.clickOnCreateDocumentLink();
         Assert.assertTrue(selectDocumentPage.getDocumentNameFromCard(documentName).contains("Free"));
+        Log.endTestCase();
     }
 
 
     @Test(dataProvider = "nameOfDocuments", priority = 2, description = "Ckeck label Text")
     @Description("Check label text after clicking on the card")
-    public void validateLable(String documentName) {
+    public void validateLable(String documentName, ITestResult result) {
+        Log.startTestCase("Second Test case");
         homePage.clickOnCreateDocumentLink();
         selectDocumentPage.clickOnDocumentCard(documentName);
         Assert.assertEquals(selectDocumentPage.getDocumentNameFromLabel(), documentName);
+        Log.endTestCase();
     }
 
     @AfterMethod
     @Step("Take Image")
-    public void takePhoto(ITestResult result) throws MalformedURLException{
-        newHelper.captureScreenshot(driver,result.getName());
+    public void takePhoto(ITestResult result) {
+        takeScreenShot.captureScreenshot(result.getName());
+
 
     }
 
@@ -88,17 +102,17 @@ public class SelectDocumentPageTest {
     public Object[][] nameOfDocuments() throws IOException {
         // get data from Excel Reader class
         ExcelReader helper = new ExcelReader();
-        return helper.getExcelData("src/test/resources/TestData/NamesData.xlsx", 1);
+        return helper.getExcelData(PropertiesReader.getProperty("PathExcel"), 1);
     }
 
-    @DataProvider(name="GetDocuments")
-    public Object[] getDocuments(){
+    @DataProvider(name = "GetDocuments")
+    public Object[] getDocuments() {
         return new Object[]
                 {
-                      "",
-                      "",
-                      "",
-                      ""
+                        "",
+                        "",
+                        "",
+                        ""
                 };
     }
 

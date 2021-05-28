@@ -5,13 +5,13 @@
     <test name="onChrome ">
         <parameter name="browserName" value="Chrome"/>
         <classes>
-            <class name="levelset.tests.SelectDocumentPageTest"></class>
+            <class name="levelset.gui.tests.SelectDocumentPageTest"></class>
         </classes>
     </test>
     <test name="onFirefox ">
         <parameter name="browserName" value="Firefox"/>
         <classes>
-            <class name="levelset.tests.SelectDocumentPageTest"></class>
+            <class name="levelset.gui.tests.SelectDocumentPageTest"></class>
         </classes>
     </test>
 
