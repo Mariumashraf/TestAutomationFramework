@@ -18,6 +18,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import java.io.IOException;
+import java.lang.reflect.Method;
 import java.net.MalformedURLException;
 
 import static levelset.gui.actions.BrowserActions.driver;
@@ -32,6 +33,7 @@ public class SelectDocumentPageTest {
     SelectDocumentPage selectDocumentPage;
     BrowserActions browserActions;
     TakeScreenShot takeScreenShot;
+
 
     @BeforeSuite
     void setAllureEnvironment() {
@@ -67,8 +69,8 @@ public class SelectDocumentPageTest {
 
     @Test(dataProvider = "nameOfDocuments", priority = 1, description = "Check Price")
     @Description("Check Price of each document")
-    public void validatePrices(String documentName) {
-        Log.startTestCase("First test case");
+    public void validatePrices(String documentName,Method method) {
+        Log.startTestCase(method.getName());
         homePage.clickOnCreateDocumentLink();
         Assert.assertTrue(selectDocumentPage.getDocumentNameFromCard(documentName).contains("Free"));
         Log.endTestCase();
@@ -77,8 +79,8 @@ public class SelectDocumentPageTest {
 
     @Test(dataProvider = "nameOfDocuments", priority = 2, description = "Ckeck label Text")
     @Description("Check label text after clicking on the card")
-    public void validateLable(String documentName, ITestResult result) {
-        Log.startTestCase("Second Test case");
+    public void validateLable(String documentName, Method method) {
+        Log.startTestCase(method.getName());
         homePage.clickOnCreateDocumentLink();
         selectDocumentPage.clickOnDocumentCard(documentName);
         Assert.assertEquals(selectDocumentPage.getDocumentNameFromLabel(), documentName);
@@ -87,10 +89,8 @@ public class SelectDocumentPageTest {
 
     @AfterMethod
     @Step("Take Image")
-    public void takePhoto(ITestResult result) {
+    public void takePhoto(ITestResult result,Method method) {
         takeScreenShot.captureScreenshot(result.getName());
-
-
     }
 
     @AfterClass

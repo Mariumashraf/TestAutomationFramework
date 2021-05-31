@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertiesReader {
-    static String filePath = "Configurations.properties";
+    static String filePath = "WebConfigurations.properties";
     public static Properties properties = new Properties();
     static {
         FileInputStream fileInputStream = null;
